@@ -15,6 +15,9 @@ client.on('message', msg => {
     else if (msg.content === 'ping') {
       msg.reply('Pong!');
     }
+  else if (msg.content === 'What is Formula X') {
+      msg.reply('Formula X is a custom Formula Series that drives on custom and real tracks');
+    }
 });
 
 client.login(process.env.TOKEN); //login bot using token
