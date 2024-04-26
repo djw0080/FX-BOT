@@ -14,6 +14,7 @@ client.on('message', msg => {
     }
     else if (msg.content === 'ping') {
       msg.reply('Pong!');
+      wait(5)
     }
   else if (msg.content === 'What is Formula X') {
       msg.reply('Formula X is a custom Formula Series that drives on custom and real tracks');
