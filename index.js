@@ -13,12 +13,12 @@ client.on('message', msg => {
       return;
     }
     else if (msg.content === '!Cmds') {
-      msg.reply('!Info, !FXInfo, !TimeZoneInfo, !CarInfo, !InviteLink');
+      msg.reply('!LeagueInfo, !FXInfo, !TimeZoneInfo, !CarInfo, !InviteLink');
     }
     else if (msg.content === 'ping') {
       msg.reply('Pong!');
     }
-    else if (msg.content === '!info') {
+    else if (msg.content === '!LeagueInfo') {
       msg.reply('!FXInfo, !TimeZoneInfo, !CarInfo');
     }
     else if (msg.content === '!FXInfo') {
@@ -33,7 +33,7 @@ client.on('message', msg => {
     else if (msg.content === '!InviteLink') {
       msg.reply('https://discord.gg/Dh3JfXSG6V');
     }
-  else if (msg.content === 'When was Formula X founded') {
+  else if (msg.content === 'When was Formula X founded?') {
       msg.reply('Formula X was founded on the 14th of Febuary 2023');
     }
 });
