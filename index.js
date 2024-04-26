@@ -12,11 +12,29 @@ client.on('message', msg => {
     if (msg.author == client.user) {
       return;
     }
+    else if (msg.content === '!Cmds') {
+      msg.reply('!Info, !FXInfo, !TimeZoneInfo, !CarInfo, !InviteLink');
+    }
     else if (msg.content === 'ping') {
       msg.reply('Pong!');
     }
-  else if (msg.content === 'What is Formula X') {
-      msg.reply('Formula X is a custom Formula Series that drives on custom and real tracks');
+    else if (msg.content === '!info') {
+      msg.reply('!FXInfo, !TimeZoneInfo, !CarInfo');
+    }
+    else if (msg.content === '!FXInfo') {
+      msg.reply('Formula X is a custom formula series with its own custom car regulations.');
+    }
+    else if (msg.content === '!TimeZoneInfo') {
+      msg.reply('TimeZone: CET');
+    }
+    else if (msg.content === '!CarInfo') {
+      msg.reply('COMING SOON');
+    }
+    else if (msg.content === '!InviteLink') {
+      msg.reply('https://discord.gg/Dh3JfXSG6V');
+    }
+  else if (msg.content === 'When was Formula X founded') {
+      msg.reply('Formula X was founded on the 14th of Febuary 2023');
     }
 });
 
