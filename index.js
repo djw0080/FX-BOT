@@ -15,9 +15,6 @@ client.on('message', msg => {
     else if (msg.content === 'ping') {
       msg.reply('Pong!');
     }
-    else {
-      msg.reply('What?');
-    }
 });
 
 client.login(process.env.TOKEN); //login bot using token
