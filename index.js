@@ -13,7 +13,7 @@ client.on('message', msg => {
       return;
     }
     else if (msg.content === '!Cmds') {
-      msg.reply('!LeagueInfo, !FXInfo, !TimeZoneInfo, !CarInfo, !InviteLink');
+      msg.reply('!LeagueInfo, !FXInfo, !TimeZoneInfo, !CarInfo, !InviteLink, !Youtube, !Twitch');
     }
     else if (msg.content === 'ping') {
       msg.reply('Pong!');
@@ -35,6 +35,12 @@ client.on('message', msg => {
     }
   else if (msg.content === 'When was Formula X founded?') {
       msg.reply('Formula X was founded on the 14th of Febuary 2023');
+    }
+      else if (msg.content === '!Youtube') {
+      msg.reply('https://youtube.com/@FormulaXrbx');
+    }
+  else if (msg.content === '!Twitch') {
+      msg.reply('https://www.twitch.tv/djw0080_alt');
     }
 });
 
